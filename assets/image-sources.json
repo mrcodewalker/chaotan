@@ -1,0 +1,402 @@
+[
+  {
+    "slide": 1,
+    "file": "slide-01-cover.jpg",
+    "source": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1200&auto=format&fit=crop",
+    "title": "Sinh viên đại học học tập và công nghệ",
+    "author": "Priscilla Du Preez",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 2,
+    "file": "slide-02-welcome.jpg",
+    "source": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1200&auto=format&fit=crop",
+    "title": "Tân sinh viên bước vào giảng đường đại học",
+    "author": "MD Duran",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 3,
+    "file": "slide-03-exam-night.jpg",
+    "source": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1200&auto=format&fit=crop",
+    "title": "Đêm trước kỳ thi và áp lực học tập",
+    "author": "Green Chameleon",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 4,
+    "file": "slide-04-ai-everywhere.jpg",
+    "source": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop",
+    "title": "Công nghệ số và AI xung quanh cuộc sống",
+    "author": "Alexandre Debiève",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 5,
+    "file": "slide-05-interactive-poll.jpg",
+    "source": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
+    "title": "Tương tác số trong giáo dục",
+    "author": "John Schnobrich",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 6,
+    "file": "slide-06-what-is-ai.jpg",
+    "source": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1200&auto=format&fit=crop",
+    "title": "Mô hình mạng nơ-ron và trí tuệ nhân tạo",
+    "author": "DeepMind",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 7,
+    "file": "slide-07-generative-ai.jpg",
+    "source": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop",
+    "title": "Sự sáng tạo của Generative AI",
+    "author": "Milad Fakurian",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 8,
+    "file": "slide-08-llm-models.jpg",
+    "source": "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=1200&auto=format&fit=crop",
+    "title": "Giao diện trò chuyện mô hình ngôn ngữ lớn",
+    "author": "Possessed Photography",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 9,
+    "file": "slide-09-next-token.jpg",
+    "source": "https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=1200&auto=format&fit=crop",
+    "title": "Toán học xác suất và chuỗi dữ liệu",
+    "author": "Roman Mager",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 10,
+    "file": "slide-10-hallucination.jpg",
+    "source": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=1200&auto=format&fit=crop",
+    "title": "Hiện tượng ảo giác AI và thị giác ảo",
+    "author": "Javier Allegue Barros",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 11,
+    "file": "slide-11-human-thinking.jpg",
+    "source": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?q=80&w=1200&auto=format&fit=crop",
+    "title": "Tư duy phản biện của con người",
+    "author": "Jesse Orrico",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 12,
+    "file": "slide-12-golden-rules.jpg",
+    "source": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop",
+    "title": "Nguyên tắc và chiến lược làm việc",
+    "author": "Scott Graham",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 13,
+    "file": "slide-13-bridge-part2.jpg",
+    "source": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop",
+    "title": "Chuyển giao sang phương pháp học tập chủ động",
+    "author": "Brooke Cagle",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 14,
+    "file": "slide-14-personal-tutor.jpg",
+    "source": "https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=1200&auto=format&fit=crop",
+    "title": "Gia sư cá nhân 1 kèm 1 với AI",
+    "author": "Katerina Holmes",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 15,
+    "file": "slide-15-what-is-prompt.jpg",
+    "source": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop",
+    "title": "Cú pháp và nghệ thuật câu lệnh prompt",
+    "author": "Fotis Fotopoulos",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 16,
+    "file": "slide-16-prompt-comparison.jpg",
+    "source": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop",
+    "title": "So sánh prompt yếu và prompt xuất sắc",
+    "author": "NASA",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 17,
+    "file": "slide-17-prompt-framework.jpg",
+    "source": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop",
+    "title": "Khung công thức cấu trúc prompt 5 thành phần",
+    "author": "Headway",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 18,
+    "file": "slide-18-feynman-concept.jpg",
+    "source": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=1200&auto=format&fit=crop",
+    "title": "Chinh phục khái niệm khó bằng phương pháp Feynman",
+    "author": "Kimberly Farmer",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 19,
+    "file": "slide-19-reading-papers.jpg",
+    "source": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=1200&auto=format&fit=crop",
+    "title": "Đọc tài liệu học thuật và giáo trình dày",
+    "author": "Patrick Tomasso",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 20,
+    "file": "slide-20-deep-learning.jpg",
+    "source": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=1200&auto=format&fit=crop",
+    "title": "Học sâu thay vì chỉ tóm tắt hời hợt",
+    "author": "Andrew Neel",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 21,
+    "file": "slide-21-flashcards-quiz.jpg",
+    "source": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1200&auto=format&fit=crop",
+    "title": "Tạo Flashcards và câu hỏi tự kiểm tra",
+    "author": "Green Chameleon",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 22,
+    "file": "slide-22-active-recall.jpg",
+    "source": "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=1200&auto=format&fit=crop",
+    "title": "Chu kỳ Active Recall và Spaced Repetition",
+    "author": "Curtis MacNewton",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 23,
+    "file": "slide-23-foreign-languages.jpg",
+    "source": "https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=1200&auto=format&fit=crop",
+    "title": "Luyện tập ngoại ngữ đàm thoại cùng AI",
+    "author": "Daria Pimkina",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 24,
+    "file": "slide-24-coding-logic.jpg",
+    "source": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop",
+    "title": "Lập trình và rèn luyện tư duy thuật toán",
+    "author": "Chris Ried",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 25,
+    "file": "slide-25-presentation-teamwork.jpg",
+    "source": "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?q=80&w=1200&auto=format&fit=crop",
+    "title": "Thuyết trình và làm việc nhóm sinh viên",
+    "author": "Teemu Paananen",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 26,
+    "file": "slide-26-part2-summary.jpg",
+    "source": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
+    "title": "Tổng kết hệ thống học tập chủ động với AI",
+    "author": "Christopher Gower",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 27,
+    "file": "slide-27-what-is-research.jpg",
+    "source": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=1200&auto=format&fit=crop",
+    "title": "Bản chất nghiên cứu khoa học ở trường đại học",
+    "author": "Science in HD",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 28,
+    "file": "slide-28-research-ideation.jpg",
+    "source": "https://images.unsplash.com/photo-1507668077129-56e32842fceb?q=80&w=1200&auto=format&fit=crop",
+    "title": "Khám phá ý tưởng và khoảng trống nghiên cứu",
+    "author": "Diego Ph",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 29,
+    "file": "slide-29-research-question.jpg",
+    "source": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1200&auto=format&fit=crop",
+    "title": "Xác lập câu hỏi nghiên cứu sắc bén",
+    "author": "Green Chameleon",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 30,
+    "file": "slide-30-find-papers.jpg",
+    "source": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1200&auto=format&fit=crop",
+    "title": "Thư viện học thuật và tìm kiếm bài báo khoa học",
+    "author": "Giammarco Boscaro",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 31,
+    "file": "slide-31-literature-review.jpg",
+    "source": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+    "title": "Tổng quan tài liệu và ma trận phân tích",
+    "author": "Carlos Muza",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 32,
+    "file": "slide-32-methodology-data.jpg",
+    "source": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+    "title": "Phương pháp và phân tích dữ liệu nghiên cứu",
+    "author": "Luke Chesser",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 33,
+    "file": "slide-33-case-study.jpg",
+    "source": "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1200&auto=format&fit=crop",
+    "title": "Case study nghiên cứu khoa học sinh viên",
+    "author": "Jason Goodman",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 34,
+    "file": "slide-34-academic-integrity.jpg",
+    "source": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1200&auto=format&fit=crop",
+    "title": "Liêm chính học thuật và danh dự người học",
+    "author": "Tingey Injury Law Firm",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 35,
+    "file": "slide-35-plagiarism.jpg",
+    "source": "https://images.unsplash.com/photo-1450133064473-71024230f91b?q=80&w=1200&auto=format&fit=crop",
+    "title": "Đạo văn và trách nhiệm trí tuệ của sinh viên",
+    "author": "Romain Dancre",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 36,
+    "file": "slide-36-fake-citations.jpg",
+    "source": "https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?q=80&w=1200&auto=format&fit=crop",
+    "title": "Cạm bẫy AI bịa nguồn và số liệu giả",
+    "author": "Elena Mozhvilo",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 37,
+    "file": "slide-37-privacy-security.jpg",
+    "source": "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200&auto=format&fit=crop",
+    "title": "Bảo mật dữ liệu cá nhân và an toàn thông tin",
+    "author": "FlyD",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 38,
+    "file": "slide-38-citation-standards.jpg",
+    "source": "https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1200&auto=format&fit=crop",
+    "title": "Quy chuẩn trích dẫn nguồn AI minh bạch",
+    "author": "Aaron Burden",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 39,
+    "file": "slide-39-honor-code.jpg",
+    "source": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop",
+    "title": "Bộ 5 quy tắc danh dự khi dùng AI",
+    "author": "Dylan Gillis",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 40,
+    "file": "slide-40-workshop-intro.jpg",
+    "source": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1200&auto=format&fit=crop",
+    "title": "Khởi động Workshop thực hành trực tiếp",
+    "author": "Dom Fou",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 41,
+    "file": "slide-41-step1-problem.jpg",
+    "source": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1200&auto=format&fit=crop",
+    "title": "Bước 1: Lựa chọn bài toán học tập thực tế",
+    "author": "Green Chameleon",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 42,
+    "file": "slide-42-step2-prompt.jpg",
+    "source": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
+    "title": "Bước 2: Viết prompt theo công thức 5 thành phần",
+    "author": "John Schnobrich",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 43,
+    "file": "slide-43-step3-refine.jpg",
+    "source": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop",
+    "title": "Bước 3: Tinh chỉnh và phản biện câu trả lời AI",
+    "author": "Jason Goodman",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 44,
+    "file": "slide-44-step4-factcheck.jpg",
+    "source": "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?q=80&w=1200&auto=format&fit=crop",
+    "title": "Bước 4: Kiểm chứng nguồn gốc và tính xác thực",
+    "author": "Averie Woodard",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 45,
+    "file": "slide-45-step5-product.jpg",
+    "source": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?q=80&w=1200&auto=format&fit=crop",
+    "title": "Bước 5: Hoàn thiện sản phẩm học tập",
+    "author": "Kelly Sikkema",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 46,
+    "file": "slide-46-live-showcase.jpg",
+    "source": "https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=1200&auto=format&fit=crop",
+    "title": "Báo cáo showcase và phản hồi nhóm",
+    "author": "Product School",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 47,
+    "file": "slide-47-top10-takeaways.jpg",
+    "source": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=1200&auto=format&fit=crop",
+    "title": "10 điều cốt lõi tân sinh viên cần ghi nhớ",
+    "author": "Kimberly Farmer",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 48,
+    "file": "slide-48-ai-student-profile.jpg",
+    "source": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1200&auto=format&fit=crop",
+    "title": "Chân dung sinh viên đại học thế hệ AI",
+    "author": "Alexis Brown",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 49,
+    "file": "slide-49-7day-challenge.jpg",
+    "source": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=1200&auto=format&fit=crop",
+    "title": "Thử thách 7 ngày thay đổi phương pháp học",
+    "author": "Glenn Carstens-Peters",
+    "license": "Unsplash License (Free to use)"
+  },
+  {
+    "slide": 50,
+    "file": "slide-50-conclusion.jpg",
+    "source": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1200&auto=format&fit=crop",
+    "title": "Lời kết và chúc mừng tân sinh viên khóa mới",
+    "author": "Priscilla Du Preez",
+    "license": "Unsplash License (Free to use)"
+  }
+]

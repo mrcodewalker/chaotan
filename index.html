@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ứng Dụng AI Trong Học Tập Và Nghiên Cứu | Học Viện Kỹ Thuật Mật Mã (KMA)</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Website trình chiếu 50 slide bài giảng đầu khóa của TS. Lê Đức Thuận (Khoa CNTT - KMA) cho tân sinh viên Học viện Kỹ thuật Mật mã: Ứng dụng AI trong học tập, nghiên cứu, thực tế làm được và không làm được gì.">
+  <meta name="keywords" content="TS Lê Đức Thuận, Khoa CNTT, Học viện Kỹ thuật Mật mã, KMA, Ứng dụng AI học tập, sinh viên KMA">
+  <meta name="author" content="TS. Lê Đức Thuận - Khoa Công nghệ Thông tin, Học viện Kỹ thuật Mật mã">
+  <meta property="og:title" content="ỨNG DỤNG AI TRONG HỌC TẬP VÀ NGHIÊN CỨU - TS. Lê Đức Thuận">
+  <meta property="og:description" content="Bài giảng chuyên đề học thuật chính quy dành cho tân sinh viên Học viện Kỹ thuật Mật mã (KMA).">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=2.0">
+</head>
+<body>
+
+  <!-- Ambient Cinematic Background -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-grid"></div>
+  </div>
+
+  <!-- Main Presentation Application -->
+  <div class="presentation-app" id="app">
+
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+      <div class="nav-brand">
+        <div class="brand-badge" aria-label="Học viện Kỹ thuật Mật mã" style="background: linear-gradient(135deg, #0284c7, #4f46e5); font-size: 1.25rem;">🛡️</div>
+        <div class="brand-title-group">
+          <span class="brand-title">HỌC VIỆN KỸ THUẬT MẬT MÃ • KMA</span>
+          <span class="brand-sub">TS. LÊ ĐỨC THUẬN • KHOA CÔNG NGHỆ THÔNG TIN</span>
+        </div>
+      </div>
+
+      <div class="nav-section-indicator">
+        <div class="section-dot"></div>
+        <span class="section-name" id="currentSectionName">Phần 1: AI và Tân Sinh Viên</span>
+      </div>
+
+      <div class="nav-controls">
+        <div class="nav-timer" title="Thời gian thuyết trình">
+          <span>⏱️</span>
+          <span id="presentationTimer">00:00</span>
+        </div>
+        <button class="nav-btn" id="btnToggleThumbnails" title="Mở danh sách slide (Phím T)">
+          <span>📑</span>
+          <span>Slide (50)</span>
+        </button>
+        <button class="nav-btn" id="btnToggleNotes" title="Bật/Tắt Ghi chú học thuật (Phím N)">
+          <span>🎙️</span>
+          <span>Ghi chú bài giảng</span>
+        </button>
+        <button class="nav-btn" id="btnToggleFullscreen" title="Toàn màn hình (Phím F)">
+          <span id="fsIcon">⛶</span>
+          <span id="fsText">Toàn màn hình</span>
+        </button>
+        <button class="nav-btn" id="btnOpenHelp" title="Xem phím tắt (Phím ?)">
+          <span>❓</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Slide Viewport (16:9 Presentation Stage) -->
+    <main class="slide-viewport">
+      <div class="slide-stage">
+        <div class="slide-canvas" id="slideCanvas" role="region" aria-label="Màn hình trình chiếu bài giảng">
+          <!-- Dynamic 50 Slides will be rendered here by script.js -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Bottom Presentation Controls & Progress -->
+    <footer class="presentation-footer">
+      <!-- Edge Progress Bar -->
+      <div class="progress-container" aria-label="Tiến trình bài giảng">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+
+      <div class="footer-left">
+        <div class="slide-counter">
+          <span class="slide-counter-current" id="currentSlideNum">01</span>
+          <span class="slide-counter-total"> / 50</span>
+        </div>
+        <div class="section-crumb" id="sectionBreadcrumb">Phần 1 • Slide 1</div>
+      </div>
+
+      <div class="footer-center">
+        <button class="control-btn" id="btnPrevSlide" title="Slide trước (Mũi tên trái hoặc Page Up)" aria-label="Slide trước">
+          ‹
+        </button>
+        <button class="control-btn" id="btnNextSlide" title="Slide kế tiếp (Mũi tên phải, Space hoặc Page Down)" aria-label="Slide kế tiếp">
+          ›
+        </button>
+      </div>
+
+      <div class="footer-right">
+        <button class="nav-btn" id="btnFirstSlide" title="Về slide đầu (Phím Home)">
+          ⏮ Đầu
+        </button>
+        <button class="nav-btn" id="btnLastSlide" title="Đến slide cuối (Phím End)">
+          ⏭ Cuối
+        </button>
+      </div>
+    </footer>
+
+    <!-- Speaker Notes Drawer (Presenter Mode) -->
+    <aside class="speaker-notes-drawer" id="speakerNotesDrawer" aria-label="Ghi chú bài giảng của Giảng viên">
+      <div class="drawer-header">
+        <div class="drawer-title">
+          <span>🎙️</span>
+          <span>GHI CHÚ HỌC THUẬT & PHÂN TÍCH CHUYÊN SÂU</span>
+        </div>
+        <button class="drawer-close-btn" id="btnCloseNotes" aria-label="Đóng ghi chú">✕</button>
+      </div>
+      <div class="drawer-content" id="speakerNotesContent">
+        <div class="notes-lecturer-tag">DIỄN GIẢI HỌC THUẬT CHO GIẢNG VIÊN</div>
+        <p id="speakerNotesText">Nội dung ghi chú phân tích chuyên sâu của bài giảng...</p>
+      </div>
+    </aside>
+
+    <!-- Slide Thumbnails Grid Modal -->
+    <div class="thumbnails-modal" id="thumbnailsModal" role="dialog" aria-modal="true" aria-label="Chọn nhanh slide">
+      <div class="modal-header">
+        <div class="modal-title">
+          <span>📑</span>
+          <span>DANH SÁCH 50 SLIDE BÀI GIẢNG</span>
+        </div>
+        <div style="display: flex; gap: 1rem; align-items: center;">
+          <div id="sectionFilterButtons" style="display: flex; gap: 0.5rem;">
+            <!-- Filter buttons injected dynamically -->
+          </div>
+          <button class="drawer-close-btn" id="btnCloseThumbnails" aria-label="Đóng danh sách">✕</button>
+        </div>
+      </div>
+      <div class="thumbnails-grid" id="thumbnailsGrid">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+
+    <!-- Keyboard Shortcuts Help Modal -->
+    <div class="help-modal" id="helpModal" role="dialog" aria-modal="true" aria-label="Phím tắt điều khiển">
+      <div class="help-card">
+        <div class="drawer-header" style="padding: 0 0 1rem 0;">
+          <div class="drawer-title">
+            <span>⌨️</span>
+            <span>PHÍM TẮT ĐIỀU KHIỂN BÀI GIẢNG</span>
+          </div>
+          <button class="drawer-close-btn" id="btnCloseHelp" aria-label="Đóng bảng phím tắt">✕</button>
+        </div>
+        <div class="shortcuts-list">
+          <div class="shortcut-item">
+            <span>Chuyển sang slide tiếp theo</span>
+            <kbd class="shortcut-kbd">Space / → / ↓</kbd>
+          </div>
+          <div class="shortcut-item">
+            <span>Quay lại slide trước</span>
+            <kbd class="shortcut-kbd">← / ↑</kbd>
+          </div>
+          <div class="shortcut-item">
+            <span>Bật / Tắt Ghi chú học thuật</span>
+            <kbd class="shortcut-kbd">N</kbd>
+          </div>
+          <div class="shortcut-item">
+            <span>Mở danh mục 50 Slide</span>
+            <kbd class="shortcut-kbd">T</kbd>
+          </div>
+          <div class="shortcut-item">
+            <span>Bật / Tắt Toàn màn hình</span>
+            <kbd class="shortcut-kbd">F</kbd>
+          </div>
+          <div class="shortcut-item">
+            <span>Về slide đầu tiên / Cuối cùng</span>
+            <div style="display: flex; gap: 0.3rem;">
+              <kbd class="shortcut-kbd">Home</kbd>
+              <kbd class="shortcut-kbd">End</kbd>
+            </div>
+          </div>
+          <div class="shortcut-item">
+            <span>Đóng modal / Thoát Toàn màn hình</span>
+            <kbd class="shortcut-kbd">Esc</kbd>
+          </div>
+        </div>
+        <button class="btn-primary-glow" id="btnDismissHelp" style="width: 100%; justify-content: center; padding: 0.75rem;">
+          Đã hiểu & Bắt đầu
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Scripts: Master Slides Data & Logic Engine -->
+  <script src="js/slides-data.js?v=2.0"></script>
+  <script src="js/script.js?v=2.0"></script>
+</body>
+</html>
