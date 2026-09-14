@@ -484,213 +484,256 @@ const SLIDES_DATA = [
     id: 13,
     sectionId: 2,
     sectionName: "Chương 2: AI Trong Học Tập & Kỹ Thuật",
-    title: "Ma Trận Năng Lực: Phạm Vi Ứng Dụng & Ranh Giới Kỹ Thuật Của AI",
-    subtitle: "Phân định rạch ròi giữa các tác vụ AI hỗ trợ hiệu quả và các giới hạn kỹ thuật bắt buộc con người đảm nhiệm",
+    title: "Thực Tiễn Đời Sống Học Đường: 4 Tác Vụ AI Hỗ Trợ Đắc Lực Nhất Cho Sinh Viên",
+    subtitle: "Phân tích các kịch bản thực tế giúp sinh viên giải quyết áp lực học tập, khối lượng bài vở và kỹ năng kỹ thuật",
     type: "matrix",
-    tag: "MA TRẬN NĂNG LỰC HỌC THUẬT",
+    tag: "ỨNG DỤNG THỰC TIỄN • ĐỜI SỐNG HỌC ĐƯỜNG",
     matrix: {
       quadrants: [
         {
-          title: "PHẠM VI AI HỖ TRỢ HIỆU QUẢ",
+          title: "TIÊU HÓA TÀI LIỆU & GIÁO TRÌNH ĐỒ SỘ",
           type: "positive",
-          icon: "✅",
+          icon: "📚",
           items: [
-            "Giải thích cú pháp con trỏ, tham chiếu, cấp phát động C++ thông qua mô hình trừu tượng hóa.",
-            "Phát hiện lỗi cú pháp (Syntax Error) và hỗ trợ gỡ lỗi sơ bộ trong thời gian thực.",
-            "Tự động sinh các bộ dữ liệu kiểm thử biên (Boundary Test Cases) để kiểm thử phần mềm.",
-            "Tổng hợp và cấu trúc hóa các định lý toán học, khái niệm trừu tượng từ giáo trình chuyên ngành."
+            "Bóc tách mục lục, khung sườn tri thức (Knowledge Tree) từ tài liệu 300–500 trang trong vài phút.",
+            "Tóm tắt các định lý, công thức và tiên đề trọng tâm phục vụ lập đề cương ôn thi học kỳ.",
+            "Chuyển đổi định dạng dữ liệu: từ ghi chú bài giảng rời rạc thành bảng biểu so sánh trực quan.",
+            "Giải thích các thuật ngữ chuyên ngành hóc búa theo nhiều cấp độ nhận thức khác nhau."
           ]
         },
         {
-          title: "GIỚI HẠN BẮT BUỘC CON NGƯỜI ĐẢM NHIỆM",
-          type: "negative",
-          icon: "❌",
-          items: [
-            "Thực hiện bài kiểm tra đánh giá năng lực độc lập trong môi trường phòng máy offline ngắt kết nối mạng.",
-            "Bảo vệ luận điểm kỹ thuật và giải trình logic hệ thống trước hội đồng khoa học.",
-            "Đảm bảo tuyệt đối tính an toàn bộ nhớ và tối ưu tài nguyên trong các hệ thống nhúng/hệ thống lớn.",
-            "Xây dựng và rèn luyện năng lực tư duy giải thuật độc lập của bộ não."
-          ]
-        },
-        {
-          title: "CÁC NGUY CƠ KỸ THUẬT PHỔ BIẾN",
-          type: "warning",
-          icon: "⚠️",
-          items: [
-            "Mã nguồn AI sinh ra thường bỏ qua các luồng giải phóng bộ nhớ, gây rò rỉ RAM (Memory Leak).",
-            "Mô hình có xu hướng đề xuất các hàm thư viện lỗi thời hoặc không tồn tại trong chuẩn C++ hiện hành.",
-            "Hội chứng hiểu bề mặt (Superficial Understanding): Đọc mã AI thấy hợp lý nhưng không tự cài đặt lại được."
-          ]
-        },
-        {
-          title: "QUY CHUẨN KỸ THUẬT ÁP DỤNG",
+          title: "GIA SƯ CÁ NHÂN HÓA 24/7 KIÊN NHẪN",
           type: "guideline",
-          icon: "🧭",
+          icon: "🎙️",
           items: [
-            "Chỉ sử dụng AI để làm rõ khái niệm; nghiêm cấm sao chép mã nguồn nguyên khối cho đồ án môn học.",
-            "Mọi đoạn mã tham khảo đều phải được biên dịch kiểm tra với cờ cảnh báo tối đa (-Wall -Wextra).",
-            "Tỷ lệ phân bổ thời gian: 20% cho việc định hướng với công cụ, 80% cho việc tự lập trình và gỡ lỗi độc lập."
+            "Đóng vai người đồng hành giải đáp thắc mắc liên tục mà không bao giờ mất kiên nhẫn.",
+            "Diễn giải khái niệm khó hiểu bằng nhiều lăng kính: từ ẩn dụ trực quan đến công thức toán học.",
+            "Đặt câu hỏi kiểm tra ngược (Active Recall) để sinh viên tự nhận diện lỗ hổng kiến thức.",
+            "Thiết kế lộ trình ôn tập phân bổ thời gian hợp lý cho từng môn học đại cương và chuyên ngành."
+          ]
+        },
+        {
+          title: "TRỢ LÝ GỠ LỖI COMPILER & LẬP TRÌNH",
+          type: "positive",
+          icon: "💻",
+          items: [
+            "Dịch các thông báo lỗi biên dịch phức tạp (g++, clang, valgrind) sang tiếng Việt rõ ràng, chỉ rõ dòng lỗi.",
+            "Giải thích nguyên nhân gốc rễ của các lỗi thời gian chạy kinh điển: Segmentation fault, Stack overflow.",
+            "Tự động sinh các bộ dữ liệu kiểm thử biên (Edge Cases: mảng rỗng, giá trị âm, tràn số nguyên).",
+            "Đề xuất các kỹ thuật tối ưu hóa thuật toán từ O(N²) xuống O(N log N) có phân tích lý do."
+          ]
+        },
+        {
+          title: "LUYỆN NGOẠI NGỮ & ĐỜI SỐNG NGHỀ NGHIỆP",
+          type: "guideline",
+          icon: "🌐",
+          items: [
+            "Đóng vai Tech Lead phỏng vấn thử (Mock Interview) 1-1 các câu hỏi kỹ thuật chuyên ngành IT/Mật mã.",
+            "Rà soát lỗi ngữ pháp, chuẩn hóa câu từ trong CV/Resume và thư xin thực tập gửi doanh nghiệp.",
+            "Dịch và tóm tắt nhanh các chuẩn kỹ thuật quốc tế (RFC, NIST, CVE, IEEE/ACM).",
+            "Soạn thảo email học thuật chuẩn mực gửi giảng viên hướng dẫn hoặc hội đồng nghiên cứu."
           ]
         }
       ]
     },
-    highlight: "Trí tuệ nhân tạo đóng vai trò công cụ khuếch đại năng suất; nền tảng tư duy độc lập và kỹ năng kỹ thuật thực chất là điều kiện tiên quyết để vận hành công cụ an toàn.",
-    speakerNotes: "Phân tích phương pháp luận: Ma trận phân loại rõ 4 khía cạnh giúp sinh viên xác định ranh giới an toàn trong quá trình tự học các môn lập trình cơ sở ngành và toán học đại cương."
+    highlight: "Trí tuệ nhân tạo là công cụ trợ lực tuyệt vời trong đời sống học đường nếu được sử dụng như một trợ lý thông minh để giảm tải các tác vụ thủ công và kích hoạt tư duy chủ động.",
+    speakerNotes: "Phân tích thực tiễn: 4 nhóm tác vụ này phản ánh chính xác các khó khăn hàng ngày của sinh viên: áp lực đọc tài liệu mùa thi, bế tắc khi gặp lỗi compiler lúc nửa đêm, thiếu môi trường luyện phỏng vấn kỹ thuật và rào cản tiếng Anh chuyên ngành. AI giải quyết triệt để các rào cản này."
   },
   {
     id: 14,
     sectionId: 2,
     sectionName: "Chương 2: AI Trong Học Tập & Kỹ Thuật",
-    title: "Phương Pháp Socratic: Tương Tác Phản Biện Dẫn Dắt Nhận Thức",
-    subtitle: "Cấu hình mô hình AI đóng vai trò người phản biện logic thay vì công cụ cung cấp đáp án sẵn",
-    type: "standard",
-    tag: "PHƯƠNG PHÁP LUẬN NHẬN THỨC",
-    image: "assets/images/slide-14-personal-tutor.jpg",
-    onlineImage: "https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=1200&auto=format&fit=crop",
-    imageAlt: "Gia sư hỗ trợ học tập trực tiếp",
-    imageCaption: "Mô hình vấn đáp Socratic dẫn dắt tư duy phản biện",
-    points: [
-      {
-        icon: "🏛️",
-        title: "Nguyên lý vấn đáp Socratic (Socratic Method)",
-        desc: "Phương pháp giáo dục kinh điển dựa trên việc đặt chuỗi câu hỏi dẫn dắt liên tục để người học tự nhận diện lỗ hổng logic, tự kiểm tra giả thuyết và từng bước hoàn thiện giải thuật."
-      },
-      {
-        icon: "💬",
-        title: "Cấu trúc câu lệnh Socratic chuẩn mực",
-        desc: "\"Thiết lập vai trò: Chuyên gia giải thuật máy tính. Nhiệm vụ: Đặt câu hỏi phản biện từng bước một về bài toán đệ quy danh sách liên kết. Yêu cầu: Tuyệt đối không cung cấp mã nguồn hoàn chỉnh; chỉ ra lỗi tư duy trong phản hồi của tôi.\""
-      },
-      {
-        icon: "🧠",
-        title: "Hiệu quả củng cố vùng nhớ dài hạn",
-        desc: "Quá trình chủ động giải quyết mâu thuẫn nhận thức kích hoạt cơ chế liên kết nơ-ron sinh học, giúp kiến thức chuyển hóa bền vững vào trí nhớ dài hạn (Long-term Memory)."
-      }
-    ],
-    highlight: "Tiếp nhận câu trả lời thụ động làm triệt tiêu năng lực tư duy giải thuật; quá trình liên tục giải quyết các câu hỏi phản biện là phương thức duy nhất để hình thành năng lực kỹ thuật thực chất.",
-    speakerNotes: "Phân tích sư phạm: Việc cấu hình prompt theo phương pháp Socratic buộc sinh viên phải tự suy nghĩ và giải thích luận điểm của mình, hạn chế tối đa tâm lý lười biếng ỷ lại vào câu trả lời có sẵn của AI."
+    title: "Ranh Giới Bất Lực Tuyệt Đối: 4 Điều AI Hoàn Toàn Không Thể Làm Thay Sinh Viên KMA",
+    subtitle: "Nhận diện các ranh giới sống còn mà phụ thuộc vào AI sẽ dẫn đến hậu quả nghiêm trọng trong học tập và rèn luyện",
+    type: "matrix",
+    tag: "RANH GIỚI BẤT LỰC • BẢN LĨNH HỌC THUẬT",
+    matrix: {
+      quadrants: [
+        {
+          title: "PHÒNG THI NGẮT MẠNG (OFFLINE EXAMS)",
+          type: "negative",
+          icon: "🚫",
+          items: [
+            "Tại Học viện Kỹ thuật Mật mã, các kỳ thi lập trình và lý thuyết diễn ra trên giấy hoặc phòng máy ngắt Internet.",
+            "Không có mạng đồng nghĩa với việc AI hoàn toàn bị vô hiệu hóa trong giờ phút quyết định điểm số.",
+            "Sinh viên phụ thuộc AI khi làm bài tập ở nhà sẽ bị 'liệt tư duy', bế tắc hoàn toàn trước đề thi và nhận điểm 0.",
+            "Chỉ có kỹ năng tự viết mã nguồn và tự suy luận trên giấy mới chuyển hóa thành điểm số thực tế."
+          ]
+        },
+        {
+          title: "BẢO VỆ ĐỒ ÁN & VẤN ĐÁP TRỰC TIẾP",
+          type: "negative",
+          icon: "⚔️",
+          items: [
+            "Hội đồng chấm thi chỉ cần hỏi 1 câu: 'Tại sao ở dòng lệnh này em lại cấp phát con trỏ thay vì biến tĩnh?'.",
+            "Sinh viên sao chép mã nguồn AI không thể giải thích luồng ô nhớ, lập tức bị đánh giá gian lận học thuật.",
+            "Điểm số đồ án quyết định bởi năng lực bảo vệ luận điểm khoa học, không quyết định bởi việc mã nguồn chạy được hay không.",
+            "AI không thể trả lời vấn đáp thay sinh viên trước những câu hỏi phản biện sắc bén của giảng viên."
+          ]
+        },
+        {
+          title: "TRÁCH NHIỆM HỌC VỤ & ĐẠO ĐỨC KỸ SƯ",
+          type: "warning",
+          icon: "⚖️",
+          items: [
+            "AI là một mô hình xác suất vô tri, không chịu trách nhiệm kỷ luật, không bị cấm thi hay đình chỉ học tập.",
+            "Sinh viên là chủ thể duy nhất chịu trách nhiệm 100% trước Quy chế đào tạo và pháp luật về sản phẩm của mình.",
+            "Mọi sự cố rò rỉ mã nguồn bí mật, lỗ hổng bảo mật hoặc trích dẫn ngụy tạo do AI sinh ra đều quy về người nộp bài.",
+            "Đạo đức kỹ sư và ý thức an toàn thông tin là phẩm chất bắt buộc không một thuật toán nào có thể thay thế."
+          ]
+        },
+        {
+          title: "KẾT NỐI XÃ HỘI & UY TÍN CÁ NHÂN",
+          type: "warning",
+          icon: "🤝",
+          items: [
+            "AI không thể thay thế việc xây dựng mối quan hệ tin cậy với thầy cô, bạn bè trong phòng lab và mentor doanh nghiệp.",
+            "Thiếu kỹ năng làm việc nhóm thực tế, sinh viên sẽ thất bại khi tham gia các dự án phần mềm quy mô lớn.",
+            "Cơ hội thực tập, học bổng và việc làm đến từ uy tín thực tế của sinh viên qua các kỳ thi và đồ án thực chất.",
+            "Sự thấu cảm, khả năng lãnh đạo, đàm phán và bản lĩnh kỹ sư vượt xa phạm vi của mô hình ngôn ngữ lớn."
+          ]
+        }
+      ]
+    },
+    highlight: "AI không đi thi hộ, không bảo vệ đồ án hộ, không chịu kỷ luật hộ và không thể xây dựng uy tín cá nhân thay sinh viên. Năng lực tự thân là giá trị bền vững duy nhất.",
+    speakerNotes: "Thông điệp then chốt: Đây là hồi chuông cảnh tỉnh nghiêm khắc dành cho sinh viên. Rất nhiều sinh viên đạt điểm bài tập về nhà tối đa nhờ dùng AI, nhưng khi bước vào phòng thi ngắt mạng hoặc phòng bảo vệ vấn đáp thì hoàn toàn sụp đổ vì không có kiến thức thực chất."
   },
   {
     id: 15,
     sectionId: 2,
     sectionName: "Chương 2: AI Trong Học Tập & Kỹ Thuật",
-    title: "Phân Tích Mã Nguồn C++: Lỗ Hổng Rò Rỉ Bộ Nhớ (Memory Leak)",
-    subtitle: "Đối chiếu kỹ thuật giữa mã nguồn do AI sinh ra và chuẩn mực an toàn bộ nhớ RAII",
-    type: "code-lab",
-    tag: "KIỂM ĐỊNH AN TOÀN MÃ NGUỒN C++",
-    codeLab: {
-      vulnerable: {
-        title: "Mã nguồn AI đề xuất (Nguy cơ rò rỉ bộ nhớ Heap)",
-        code: `// Cấp phát mảng động trên Heap không an toàn
-int* processBuffer(int size) {
-    int* buffer = new int[size]; // Cấp phát tài nguyên
-    for(int i = 0; i < size; ++i) {
-        buffer[i] = i * 2;
-    }
-    // LỖI KỸ THUẬT: Luồng thoát sớm không giải phóng vùng nhớ!
-    if (size > 1000) return nullptr; 
-    
-    return buffer; // Chuyển giao trách nhiệm delete[] không rõ ràng
-}
-// Hậu quả: Khi gọi hàm lặp lại nhiều lần -> Tràn RAM -> Crash hệ thống!`
-      },
-      secure: {
-        title: "Mã nguồn chuẩn an toàn bộ nhớ (RAII / C++17)",
-        code: `#include <vector>
-#include <memory>
-
-// Áp dụng nguyên lý Resource Acquisition Is Initialization (RAII)
-std::vector<int> processBufferSecure(int size) {
-    if (size > 1000) return {}; // Trả về an toàn, không rò rỉ
-    
-    std::vector<int> buffer(size);
-    for(int i = 0; i < size; ++i) {
-        buffer[i] = i * 2;
-    }
-    return buffer; // Bộ nhớ tự động giải phóng khi ra khỏi phạm vi
-}
-// Đảm bảo Exception Safety và không xảy ra rò rỉ vùng nhớ Heap!`
-      },
-      analysis: "Các mô hình AI thường đề xuất mã nguồn theo phong cách lập trình C cổ điển (new/malloc) để tối giản cú pháp, bỏ qua việc quản lý vòng đời tài nguyên và các luồng ngoại lệ (Exception Handling), dẫn tới thất thoát tài nguyên nghiêm trọng trong môi trường sản xuất."
+    title: "Thực Tiễn Mùa Thi Cử: Chiến Lược 'Tiêu Hóa' 300 Trang Giáo Trình Bằng AI",
+    subtitle: "Phương pháp khoa học vượt qua khủng hoảng bài vở mà không rơi vào cạm bẫy ảo tưởng thông thái",
+    type: "standard",
+    tag: "CHIẾN LƯỢC HỌC TẬP THỰC CHIẾN",
+    image: "assets/images/slide-02-welcome.jpg",
+    onlineImage: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1200&auto=format&fit=crop",
+    imageAlt: "Sinh viên nghiên cứu giáo trình và ghi chép bài giảng",
+    imageCaption: "Chiến lược 3 bước làm chủ giáo trình đồ sộ mùa thi cử",
+    visual: {
+      type: "flow",
+      title: "QUY TRÌNH 3 BƯỚC HẤP THỤ TRI THỨC CÙNG AI",
+      tag: "ACTIVE LEARNING PIPELINE",
+      source: "Phương Pháp Luận Học Tập Đại Học • Khoa CNTT - KMA",
+      nodes: [
+        {
+          icon: "🌳",
+          title: "Bước 1: Trích xuất khung xương tri thức (Knowledge Tree)",
+          desc: "Đưa đề cương/mục lục vào AI để bóc tách 20% khái niệm cốt lõi chiếm 80% trọng số đề thi (Nguyên lý Pareto).",
+          badge: "TỔNG QUAN"
+        },
+        {
+          icon: "❓",
+          title: "Bước 2: Truy hồi chủ động (Active Recall)",
+          desc: "Yêu cầu AI đóng vai giảng viên khó tính đặt 10 câu hỏi hóc búa nhất về các trường hợp ngoại lệ trong lý thuyết.",
+          badge: "CHẤT VẤN NGƯỢC",
+          highlight: true
+        },
+        {
+          icon: "✍️",
+          title: "Bước 3: Tự giải trên giấy & Đối chiếu phản biện",
+          desc: "Gấp màn hình máy tính, tự viết lại chứng minh và giải thuật ra giấy nháp; chỉ dùng AI để đối chiếu độ chặt chẽ.",
+          badge: "KHẮC SÂU VÙNG NHỚ"
+        }
+      ]
     },
-    highlight: "Tiêu chuẩn kỹ thuật trong phát triển phần mềm: Đoạn mã đạt yêu cầu không chỉ dừng lại ở việc cho ra kết quả đúng mà bắt buộc phải đảm bảo an toàn bộ nhớ tuyệt đối.",
-    speakerNotes: "Phân tích kỹ thuật: Đây là bài học thực tế rất quan trọng. Khi chấm bài tập lớn C++, công cụ kiểm tra tự động (như Valgrind hoặc AddressSanitizer) sẽ phát hiện ngay các lỗi rò rỉ bộ nhớ dù chương trình vẫn in ra kết quả chính xác."
+    points: [
+      {
+        icon: "⚠️",
+        title: "Cạm bẫy nguy hiểm: Ảo tưởng thông thái (Fluency Illusion)",
+        desc: "Đọc bản tóm tắt mượt mà của AI tạo cảm giác rằng bộ não đã hiểu sâu sắc; nhưng khi vào phòng thi không có AI, sinh viên hoàn toàn bất lực trước câu hỏi tự luận biến thể."
+      },
+      {
+        icon: "⚖️",
+        title: "Quy tắc tỷ lệ vàng 20 / 80 trong mùa thi",
+        desc: "Dành tối đa 20% thời gian tương tác với AI để định hướng cấu trúc; dành 80% thời gian cho việc tự giải bài, tự viết mã nguồn và ghi nhớ độc lập."
+      }
+    ],
+    highlight: "Đọc tóm tắt của AI là hành vi tiếp nhận thụ động; chỉ khi tự tay giải bài tập trên giấy và đối chiếu phản biện, kiến thức mới thực sự biến thành năng lực của người học.",
+    speakerNotes: "Phân tích thực tế: Rất nhiều sinh viên có thói quen trước ngày thi nhờ AI tóm tắt rồi đọc lướt qua một lượt và tự tin đi thi. Khi gặp bài toán đòi hỏi tính toán chi tiết, sinh viên sẽ quên ngay công thức. Hãy rèn luyện thói quen dùng AI để đặt câu hỏi chất vấn thay vì đọc tóm tắt sẵn."
   },
   {
     id: 16,
     sectionId: 2,
     sectionName: "Chương 2: AI Trong Học Tập & Kỹ Thuật",
-    title: "An Ninh Phần Mềm: Lỗ Hổng Tràn Bộ Đệm (Buffer Overflow)",
-    subtitle: "Phân tích nguy cơ an ninh từ các hàm chuỗi không an toàn mà mô hình AI thường đề xuất",
+    title: "Thực Tiễn Phòng Máy: AI Giúp Gỡ Lỗi Compiler vs Thảm Họa Nộp Code AI Không Thẩm Định",
+    subtitle: "Phân tích tình huống xử lý lỗi Segmentation Fault và cạm bẫy rò rỉ bộ nhớ khi nộp bài hệ thống Online Judge",
     type: "code-lab",
-    tag: "AN NINH MÃ NGUỒN (SECURE CODING)",
+    tag: "GỠ LỖI LẬP TRÌNH THỰC TẾ",
     codeLab: {
       vulnerable: {
-        title: "Mã nguồn chứa lỗ hổng bảo mật (Không kiểm tra biên)",
-        code: `#include <cstring>
-
-void processInput(const char* rawInput) {
-    char localBuffer[64]; // Bộ đệm kích thước cố định trên Stack
-    // LỖ HỔNG BẢO MẬT: Hàm strcpy không kiểm tra độ dài đầu vào!
-    strcpy(localBuffer, rawInput); 
-    // Nguy cơ: Kẻ tấn công cung cấp chuỗi > 64 bytes
-    // -> Ghi đè địa chỉ trả về (Return Address) trên Stack
-    // -> Chiếm quyền điều khiển luồng thực thi chương trình!
-}`
+        title: "❌ Code AI sinh ra (Gây lỗi Compilation / Memory Leak trên máy thi)",
+        code: `// Thảm họa phòng thi KMA: Copy code AI mà không hiểu
+#include <iostream>
+int* getPrimes(int n) {
+    int* primes = new int[n]; // Cấp phát thô
+    int count = 0;
+    for (int i = 2; i <= n; i++) {
+        // AI dùng logic chưa tối ưu O(N^2)
+        bool isP = true;
+        for (int j = 2; j * j <= i; j++)
+            if (i % j == 0) { isP = false; break; }
+        if (isP) primes[count++] = i;
+    }
+    return primes; // Quên delete[] -> Online Judge chấm Memory Limit Exceeded!
+}
+// Vào phòng thi ngắt mạng: Sinh viên quên cú pháp con trỏ -> 0 điểm!`
       },
       secure: {
-        title: "Mã nguồn đạt chuẩn lập trình an toàn",
-        code: `#include <string_view>
-#include <string>
-#include <stdexcept>
-
-void processInputSecure(std::string_view rawInput) {
-    constexpr size_t MAX_CAPACITY = 64;
-    // Kiểm tra ràng buộc biên nghiêm ngặt
-    if (rawInput.length() >= MAX_CAPACITY) {
-        throw std::length_error("Dữ liệu đầu vào vượt quá giới hạn an toàn!");
+        title: "✓ Sinh viên tự làm chủ tư duy (Áp dụng Sàng Eratosthenes & std::vector)",
+        code: `// Chuẩn kỹ sư KMA: Tự thiết kế giải thuật O(N log log N)
+#include <vector>
+std::vector<int> getPrimesOptimized(int n) {
+    std::vector<bool> isPrime(n + 1, true);
+    std::vector<int> primes;
+    for (int p = 2; p * p <= n; p++) {
+        if (isPrime[p]) {
+            for (int i = p * p; i <= n; i += p)
+                isPrime[i] = false;
+        }
     }
-    std::string safeBuffer(rawInput); // Quản lý kích thước động an toàn
-    // Triệt tiêu hoàn toàn nguy cơ tấn công tràn bộ đệm
+    for (int p = 2; p <= n; p++)
+        if (isPrime[p]) primes.push_back(p);
+    return primes; // Tự động dọn dẹp RAM, vượt qua 100% test case!
 }`
       },
-      analysis: "Dữ liệu huấn luyện của AI chứa lượng lớn mã nguồn lịch sử sử dụng các hàm không an toàn (strcpy, gets, sprintf). Việc sao chép trực tiếp các đoạn mã này mà không qua bước kiểm tra an ninh là nguyên nhân chính dẫn đến các lỗ hổng phần mềm nghiêm trọng."
+      analysis: "Trong thực tế thi cử tại KMA, hệ thống chấm tự động Online Judge (OJ) giới hạn nghiêm ngặt thời gian (1.0s) và bộ nhớ RAM (64MB). Mã nguồn AI sinh ra thường sử dụng con trỏ trần thiếu kiểm soát biên hoặc giải thuật vét cạn, dẫn tới kết quả Time Limit Exceeded hoặc Memory Limit Exceeded."
     },
-    highlight: "Sinh viên chuyên ngành Công nghệ Thông tin và An toàn Thông tin có trách nhiệm thẩm định an ninh đối với mọi đoạn mã do AI sinh ra trước khi tích hợp vào hệ thống.",
-    speakerNotes: "Phân tích an toàn: Lỗ hổng tràn bộ đệm trên ngăn xếp (Stack-based Buffer Overflow) là lỗ hổng kinh điển trong bảo mật máy tính. Các công cụ Static Analysis sẽ lập tức gắn cờ cảnh báo nguy hiểm đối với hàm `strcpy`."
+    highlight: "Hãy dùng AI để giải thích thông điệp cảnh báo của Compiler (-Wall -Wextra), tuyệt đối không copy mã nguồn nguyên khối khi chưa nắm chắc từng bước thực thi trong bộ nhớ.",
+    speakerNotes: "Kinh nghiệm giảng đường: Rất nhiều sinh viên năm nhất bị điểm 0 môn Kỹ thuật lập trình vì nộp code do AI sinh ra. Code AI chạy thử trên máy cá nhân có vẻ đúng với 1-2 test case nhỏ, nhưng khi đưa lên máy chủ chấm thi với hàng nghìn test case lớn thì lập tức bị tràn bộ nhớ hoặc chạy quá thời gian quy định."
   },
   {
     id: 17,
     sectionId: 2,
     sectionName: "Chương 2: AI Trong Học Tập & Kỹ Thuật",
-    title: "Tối Ưu Thuật Toán: Phân Tích Độ Phức Tạp Tính Toán Big-O",
-    subtitle: "Ứng dụng AI trong việc phân tích điểm nghẽn hiệu năng và tối ưu hóa thời gian/không gian",
-    type: "standard",
-    tag: "ĐỘ PHỨC TẠP TÍNH TOÁN",
+    title: "Thực Tiễn Nghề Nghiệp: Mô Phỏng Phỏng Vấn (Mock Interview) & Bảo Vệ Đồ Án",
+    subtitle: "Phân định rõ ranh giới giữa việc dùng AI để chuẩn bị kỹ năng và bản lĩnh xử lý thực tế trước hội đồng tuyển dụng",
+    type: "comparison",
+    tag: "HÀNH TRANG NGHỀ NGHIỆP THỰC TẾ",
     image: "assets/images/slide-08-llm-models.jpg",
-    onlineImage: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=1200&auto=format&fit=crop",
-    imageAlt: "Đồ thị độ phức tạp thuật toán",
-    imageCaption: "Phân tích tăng trưởng chi phí tính toán Big-O cùng AI",
-    benchmarkTitle: "THỜI GIAN THỰC THI THUẬT TOÁN KHI QUY MÔ N = 100.000 PHẦN TỬ",
-    benchmarkSource: "Thử nghiệm chuẩn: CPU Intel Xeon - Trình biên dịch g++ cờ -O2",
-    benchmarkData: [
-      { name: "Thuật toán vét cạn O(N²) — Vòng lặp lồng nhau", score: 98, color: "warning" },
-      { name: "Thuật toán tối ưu O(N log N) — Chia để trị / Quy hoạch động", score: 12, color: "emerald" },
-      { name: "Thuật toán tối ưu O(1) / O(N) — Bảng băm (Hash Table)", score: 3, color: "violet" }
-    ],
-    points: [
-      {
-        icon: "⏳",
-        title: "Tác động của quy mô dữ liệu lớn (Scalability)",
-        desc: "Khi N = 100.000, thuật toán O(N²) đòi hỏi 10¹⁰ phép tính cơ bản (~14.2 giây thực thi). Thuật toán O(N log N) chỉ đòi hỏi ~1.66 × 10⁶ phép tính (~0.003 giây)."
-      },
-      {
-        icon: "💡",
-        title: "Phương pháp truy vấn AI để tối ưu hóa cấu trúc",
-        desc: "Truy vấn chuẩn: \"Phân tích độ phức tạp thời gian và không gian của thuật toán này. Đề xuất cấu trúc dữ liệu tối ưu (như Cây cân bằng hoặc Bảng băm) để giảm độ phức tạp xuống O(N log N) hoặc O(N).\""
-      }
-    ],
-    highlight: "Độ phức tạp tính toán Big-O là tiêu chuẩn khoa học phân định giữa mã nguồn thử nghiệm đơn giản và hệ thống phần mềm có khả năng mở rộng trong thực tế.",
-    speakerNotes: "Phân tích giải thuật: Việc ứng dụng AI để phân tích Big-O giúp sinh viên nhận thức rõ chi phí tài nguyên phần cứng, từ đó lựa chọn đúng cấu trúc dữ liệu (mảng, danh sách liên kết, cây, bảng băm) phù hợp với yêu cầu bài toán."
+    onlineImage: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1200&auto=format&fit=crop",
+    imageAlt: "Phỏng vấn kỹ thuật và bảo vệ đồ án",
+    imageCaption: "Luyện tập cùng AI nhưng thể hiện bằng bản lĩnh thực chất",
+    comparison: {
+      leftTitle: "🤖 NHỮNG GÌ AI HỖ TRỢ XUẤT SẮC (CHUẨN BỊ TRƯỚC)",
+      leftSubtitle: "Tận dụng tối đa công nghệ để tôi luyện kỹ năng:",
+      leftItems: [
+        "Đóng vai Tech Lead khó tính phỏng vấn 1-1 các câu hỏi lý thuyết OOP, Cấu trúc dữ liệu và Mạng máy tính.",
+        "Gợi ý các câu hỏi phản biện hóc búa có thể gặp trong buổi bảo vệ đồ án môn học hoặc khóa luận tốt nghiệp.",
+        "Rà soát lỗi ngữ pháp, cấu trúc câu và chuẩn hóa thuật ngữ chuyên ngành trong CV tiếng Anh xin thực tập.",
+        "Tự động sinh các bộ câu hỏi tình huống về giải quyết xung đột mã nguồn trên Git và an toàn thông tin."
+      ],
+      rightTitle: "👤 NHỮNG GÌ CON NGƯỜI PHẢI TỰ CHỨNG MINH (TẠI CHỖ)",
+      rightSubtitle: "Bản lĩnh cá nhân quyết định 100% kết quả:",
+      rightItems: [
+        "Khả năng trực tiếp viết code trên bảng trắng (Whiteboard coding) và giải thích từng dòng lệnh khi bị chất vấn.",
+        "Bản lĩnh bình tĩnh, tự tin và phản xạ linh hoạt khi người phỏng vấn đột ngột thay đổi ràng buộc bài toán.",
+        "Thái độ trung thực, cầu thị: Thẳng thắn thừa nhận phần kiến thức chưa biết thay vì bịa đặt câu trả lời.",
+        "Sự thấu cảm, văn hóa làm việc nhóm, đạo đức nghề nghiệp và cam kết bảo vệ bí mật công nghệ của tổ chức."
+      ]
+    },
+    highlight: "AI là người bạn tập luyện (Sparring Partner) lý tưởng trong phòng kín; nhưng khi bước ra võ đài thực tế trước nhà tuyển dụng hay hội đồng chấm thi, bản lĩnh và tri thức tự thân là vũ khí duy nhất.",
+    speakerNotes: "Lời khuyên cho sinh viên: Hãy tận dụng AI làm công cụ luyện phỏng vấn kỹ thuật hàng tuần ngay từ năm thứ nhất. Bằng cách yêu cầu AI chất vấn các câu hỏi khó, sinh viên sẽ không bị bỡ ngỡ khi bước vào các kỳ phỏng vấn thực tập sinh hoặc bảo vệ đồ án trước hội đồng các thầy cô."
   },
   {
     id: 18,
@@ -800,8 +843,8 @@ void processInputSecure(std::string_view rawInput) {
         desc: "Yêu cầu xuất dữ liệu dưới dạng bảng đối chiếu, sơ đồ ASCII, hoặc khối mã nguồn có chú thích từng dòng lệnh."
       }
     ],
-    highlight: "Nguyên lý kỹ thuật: Chất lượng thông tin đầu ra phụ thuộc trực tiếp vào tính chặt chẽ và đầy đủ của các ràng buộc kỹ thuật ở đầu vào (Garbage In, Garbage Out).",
-    speakerNotes: "Phân tích phương pháp: Khung CLEAR chuyển đổi việc tương tác với AI từ các câu hỏi tự nhiên mơ hồ thành một bản đặc tả yêu cầu kỹ thuật (Technical Specification), giúp hạn chế tối đa tính bất định của mô hình."
+    highlight: "Ứng dụng đỉnh cao của CLEAR là Prompting Socratic: Yêu cầu AI chỉ đặt câu hỏi phản biện từng bước một, tuyệt đối không đưa ra đáp án sẵn để kích hoạt tối đa năng lực tư duy độc lập.",
+    speakerNotes: "Phân tích phương pháp: Khung CLEAR chuyển đổi việc tương tác với AI từ các câu hỏi tự nhiên mơ hồ thành một bản đặc tả yêu cầu kỹ thuật. Khi kết hợp với phương pháp Socratic, AI trở thành người thầy phản biện kiên nhẫn nhất, dẫn dắt sinh viên tự tìm ra đáp án thay vì nhận câu trả lời thụ động."
   },
   {
     id: 21,
