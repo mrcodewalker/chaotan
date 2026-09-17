@@ -259,7 +259,18 @@ document.addEventListener('DOMContentLoaded', () => {
     ` : '';
 
     let mediaContentHtml = '';
-    if (slide.visual) {
+    if (slide.image) {
+      mediaContentHtml = `
+        <img class="media-image media-fit-${escapeHtml(slide.mediaFit || 'cover')}" src="${slide.image}" 
+             onerror="this.onerror=null; this.src='${slide.onlineImage || ''}';" 
+             alt="${escapeHtml(slide.imageAlt || slide.title)}" 
+             loading="lazy">
+        <div class="media-badge-overlay">
+          <div class="media-badge-title">${escapeHtml(slide.imageCaption || 'Hình minh họa học thuật')}</div>
+          <div class="media-badge-desc">${escapeHtml(slide.imageAlt || slide.title)}</div>
+        </div>
+      `;
+    } else if (slide.visual) {
       if (slide.visual.type === 'flow') {
         const nodesHtml = (slide.visual.nodes || []).map((node, idx, arr) => `
           <div class="flow-node ${node.highlight ? 'highlight-node' : ''}">
@@ -431,37 +442,62 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     `).join('');
 
+    const hasMedia = !!slide.image;
+    const mediaHtml = hasMedia ? `
+      <div class="standard-media-col">
+        <img class="media-image media-fit-${escapeHtml(slide.mediaFit || 'cover')}" 
+             src="${slide.image}" 
+             onerror="this.onerror=null; this.src='${slide.onlineImage || ''}';" 
+             alt="${escapeHtml(slide.imageAlt || slide.title)}" 
+             loading="lazy">
+        <div class="media-badge-overlay">
+          <div class="media-badge-title">${escapeHtml(slide.imageCaption || 'Đối chiếu học thuật')}</div>
+          <div class="media-badge-desc">${escapeHtml(slide.imageAlt || slide.title)}</div>
+        </div>
+      </div>
+    ` : '';
+
     return `
-      <div class="layout-comparison">
-        <div>
-          <div class="slide-tag">${escapeHtml(slide.tag || 'SO SÁNH')}</div>
-          <div class="slide-header" style="margin-bottom: 0.5rem;">
-            <h2 class="slide-title">${escapeHtml(slide.title)}</h2>
-            <p class="slide-subtitle">${escapeHtml(slide.subtitle)}</p>
-          </div>
-        </div>
-
-        <div class="comparison-grid">
-          <div class="comparison-card left">
-            <div class="comparison-header">
-              <div class="comparison-title">${escapeHtml(comp.leftTitle || 'Cách Tiếp Cận Cũ')}</div>
-              <div class="comparison-sub">${escapeHtml(comp.leftSubtitle || 'Chưa tối ưu')}</div>
-            </div>
-            <div class="comparison-list">
-              ${leftItems}
+      <div class="layout-comparison ${hasMedia ? 'has-media' : ''}">
+        <div class="comparison-content">
+          <div>
+            <div class="slide-tag">${escapeHtml(slide.tag || 'SO SÁNH ĐỐI CHIẾU')}</div>
+            <div class="slide-header" style="margin-bottom: 0.6rem;">
+              <h2 class="slide-title">${escapeHtml(slide.title)}</h2>
+              <p class="slide-subtitle">${escapeHtml(slide.subtitle)}</p>
             </div>
           </div>
 
-          <div class="comparison-card right">
-            <div class="comparison-header">
-              <div class="comparison-title">${escapeHtml(comp.rightTitle || 'Cách Tiếp Cận Mới Với AI')}</div>
-              <div class="comparison-sub">${escapeHtml(comp.rightSubtitle || 'Khuyến nghị áp dụng')}</div>
+          <div class="comparison-grid ${hasMedia ? 'with-media' : ''}">
+            <div class="comparison-card left">
+              <div class="comparison-header">
+                <div class="comparison-title">${escapeHtml(comp.leftTitle || 'Cách Tiếp Cận Cũ')}</div>
+                <div class="comparison-sub">${escapeHtml(comp.leftSubtitle || 'Chưa tối ưu')}</div>
+              </div>
+              <div class="comparison-list">
+                ${leftItems}
+              </div>
             </div>
-            <div class="comparison-list">
-              ${rightItems}
+
+            <div class="comparison-card right">
+              <div class="comparison-header">
+                <div class="comparison-title">${escapeHtml(comp.rightTitle || 'Cách Tiếp Cận Mới Với AI')}</div>
+                <div class="comparison-sub">${escapeHtml(comp.rightSubtitle || 'Khuyến nghị áp dụng')}</div>
+              </div>
+              <div class="comparison-list">
+                ${rightItems}
+              </div>
             </div>
           </div>
+
+          ${slide.highlight ? `
+            <div class="slide-highlight-card" style="margin-top: 0.85rem;">
+              💡 <strong>Điểm cốt lõi:</strong> ${escapeHtml(slide.highlight)}
+            </div>
+          ` : ''}
         </div>
+
+        ${mediaHtml}
       </div>
     `;
   }
@@ -907,23 +943,42 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     `).join('');
 
+    const hasMedia = !!slide.image;
+    const mediaHtml = hasMedia ? `
+      <div class="standard-media-col">
+        <img class="media-image media-fit-${escapeHtml(slide.mediaFit || 'cover')}" 
+             src="${slide.image}" 
+             onerror="this.onerror=null; this.src='${slide.onlineImage || ''}';" 
+             alt="${escapeHtml(slide.imageAlt || slide.title)}" 
+             loading="lazy">
+        <div class="media-badge-overlay">
+          <div class="media-badge-title">${escapeHtml(slide.imageCaption || 'Ma trận phân tích')}</div>
+          <div class="media-badge-desc">${escapeHtml(slide.imageAlt || slide.title)}</div>
+        </div>
+      </div>
+    ` : '';
+
     return `
-      <div class="layout-matrix">
-        <div>
-          <div class="slide-tag">${escapeHtml(slide.tag || 'MA TRẬN ĐỐI CHIẾU')}</div>
-          <div class="slide-header" style="margin-bottom: 0.5rem;">
-            <h2 class="slide-title">${escapeHtml(slide.title)}</h2>
-            <p class="slide-subtitle">${escapeHtml(slide.subtitle)}</p>
+      <div class="layout-matrix ${hasMedia ? 'has-media' : ''}">
+        <div class="matrix-content">
+          <div>
+            <div class="slide-tag">${escapeHtml(slide.tag || 'MA TRẬN ĐỐI CHIẾU')}</div>
+            <div class="slide-header" style="margin-bottom: 0.6rem;">
+              <h2 class="slide-title">${escapeHtml(slide.title)}</h2>
+              <p class="slide-subtitle">${escapeHtml(slide.subtitle)}</p>
+            </div>
           </div>
-        </div>
-        <div class="matrix-grid">
-          ${quadsHtml}
-        </div>
-        ${slide.highlight ? `
-          <div class="slide-highlight-card">
-            💡 <strong>Kết luận cốt lõi:</strong> ${escapeHtml(slide.highlight)}
+          <div class="matrix-grid ${hasMedia ? 'with-media' : ''}">
+            ${quadsHtml}
           </div>
-        ` : ''}
+          ${slide.highlight ? `
+            <div class="slide-highlight-card" style="margin-top: 0.75rem;">
+              💡 <strong>Kết luận cốt lõi:</strong> ${escapeHtml(slide.highlight)}
+            </div>
+          ` : ''}
+        </div>
+
+        ${mediaHtml}
       </div>
     `;
   }
@@ -944,23 +999,42 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     `).join('');
 
+    const hasMedia = !!slide.image;
+    const mediaHtml = hasMedia ? `
+      <div class="standard-media-col">
+        <img class="media-image media-fit-${escapeHtml(slide.mediaFit || 'cover')}" 
+             src="${slide.image}" 
+             onerror="this.onerror=null; this.src='${slide.onlineImage || ''}';" 
+             alt="${escapeHtml(slide.imageAlt || slide.title)}" 
+             loading="lazy">
+        <div class="media-badge-overlay">
+          <div class="media-badge-title">${escapeHtml(slide.imageCaption || 'Quy trình nghiên cứu')}</div>
+          <div class="media-badge-desc">${escapeHtml(slide.imageAlt || slide.title)}</div>
+        </div>
+      </div>
+    ` : '';
+
     return `
-      <div class="layout-pipeline">
-        <div>
-          <div class="slide-tag">${escapeHtml(slide.tag || 'QUY TRÌNH KHOA HỌC')}</div>
-          <div class="slide-header" style="margin-bottom: 0.5rem;">
-            <h2 class="slide-title">${escapeHtml(slide.title)}</h2>
-            <p class="slide-subtitle">${escapeHtml(slide.subtitle)}</p>
+      <div class="layout-pipeline ${hasMedia ? 'has-media' : ''}">
+        <div class="pipeline-content">
+          <div>
+            <div class="slide-tag">${escapeHtml(slide.tag || 'QUY TRÌNH KHOA HỌC')}</div>
+            <div class="slide-header" style="margin-bottom: 0.6rem;">
+              <h2 class="slide-title">${escapeHtml(slide.title)}</h2>
+              <p class="slide-subtitle">${escapeHtml(slide.subtitle)}</p>
+            </div>
           </div>
-        </div>
-        <div class="pipeline-cards-row">
-          ${stepsHtml}
-        </div>
-        ${slide.highlight ? `
-          <div class="slide-highlight-card">
-            💡 <strong>Kỷ luật nghiên cứu:</strong> ${escapeHtml(slide.highlight)}
+          <div class="pipeline-cards-row ${hasMedia ? 'with-media' : ''}">
+            ${stepsHtml}
           </div>
-        ` : ''}
+          ${slide.highlight ? `
+            <div class="slide-highlight-card" style="margin-top: 0.75rem;">
+              💡 <strong>Kỷ luật nghiên cứu:</strong> ${escapeHtml(slide.highlight)}
+            </div>
+          ` : ''}
+        </div>
+
+        ${mediaHtml}
       </div>
     `;
   }

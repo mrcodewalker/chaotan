@@ -12,12 +12,15 @@ const MIME_TYPES = {
   '.jpeg': 'image/jpeg',
   '.png': 'image/png',
   '.svg': 'image/svg+xml',
-  '.webp': 'image/webp'
+  '.webp': 'image/webp',
+  '.pptx': 'application/vnd.openxmlformats-officedocument.presentationml.presentation',
+  '.pdf': 'application/pdf'
 };
 
 const server = http.createServer((req, res) => {
   let reqPath = decodeURIComponent(req.url.split('?')[0]);
   if (reqPath === '/' || reqPath === '') reqPath = '/index.html';
+  if (reqPath === '/download-pptx') reqPath = '/assets/Ung-Dung-AI-Trong-Hoc-Tap-KMA-TS-Le-Duc-Thuan.pptx';
 
   const rootDir = path.resolve(__dirname, '..');
   const filePath = path.join(rootDir, reqPath);
@@ -31,8 +34,15 @@ const server = http.createServer((req, res) => {
 
     const ext = path.extname(filePath).toLowerCase();
     const contentType = MIME_TYPES[ext] || 'application/octet-stream';
+    const headers = { 'Content-Type': contentType };
 
-    res.writeHead(200, { 'Content-Type': contentType });
+    if (ext === '.pptx') {
+      const fileName = path.basename(filePath);
+      headers['Content-Disposition'] = `attachment; filename="${encodeURIComponent(fileName)}"`;
+      headers['Content-Length'] = stats.size;
+    }
+
+    res.writeHead(200, headers);
     fs.createReadStream(filePath).pipe(res);
   });
 });

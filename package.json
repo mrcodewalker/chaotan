@@ -1,0 +1,25 @@
+{
+  "name": "web_thay_thuan",
+  "version": "1.0.0",
+  "description": "> **Chủ đề**: *Ứng Dụng Trí Tuệ Nhân Tạo Trong Học Tập Và Nghiên Cứu: Từ Tân Sinh Viên KMA Đến Người Học Chủ Động — AI Làm Được Gì Và Hoàn Toàn Bất Lực Trước Điều Gì?*   > **Đơn vị**: Khoa Công Nghệ Thông Tin • Học Viện Kỹ Thuật Mật Mã (KMA)   > **Người trình bày**: TS. Lê Đức Thuận - Giảng viên Khoa Công nghệ Thông tin   > **Thời lượng bài giảng**: 1.5 – 2.0 giờ   > **Số lượng**: Đúng 50 Slide chuẩn Keynote hội thảo công nghệ giáo dục   > **Công nghệ**: HTML5, CSS3 Vanilla Glassmorphism, JavaScript thuần (Không phụ thuộc thư viện nặng, chạy offline 100%)",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrcodewalker/chaotan.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mrcodewalker/chaotan/issues"
+  },
+  "homepage": "https://github.com/mrcodewalker/chaotan#readme",
+  "dependencies": {
+    "pptxgenjs": "^4.0.1",
+    "puppeteer-core": "^25.11.0"
+  }
+}
